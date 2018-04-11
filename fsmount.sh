@@ -1,7 +1,8 @@
 #!/bin/bash
 
-ROOTFS_PATH="/home/huangxiaolu/proj/chroot/ubuntu-1604-lts"
+ROOTFS_PATH="$(readlink -f $0 | xargs dirname)/rootfs"
 
+echo $ROOTFS_PATH
 mountpoint $ROOTFS_PATH/proc > /dev/null
 
 if [ $? != 0 ]; then

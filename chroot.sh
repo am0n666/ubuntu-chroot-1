@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ROOTFS_PATH="/home/huangxiaolu/proj/chroot/ubuntu-1604-lts"
+ROOTFS_PATH="$(readlink -f $0 | xargs dirname)/rootfs"
 
 sudo chroot $ROOTFS_PATH /bin/bash
