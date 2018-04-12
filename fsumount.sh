@@ -8,3 +8,5 @@ sudo umount $ROOTFS_PATH/proc
 
 sudo umount $ROOTFS_PATH/sys
 sudo umount $ROOTFS_PATH/sys/kernel/debug
+
+sudo umount $ROOTFS_PATH/run

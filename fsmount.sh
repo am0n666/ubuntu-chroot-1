@@ -13,4 +13,6 @@ if [ $? != 0 ]; then
 
     sudo mount -o bind /sys $ROOTFS_PATH/sys
     sudo mount -o bind /sys/kernel/debug $ROOTFS_PATH/sys/kernel/debug
+
+    sudo mount -o bind /run $ROOTFS_PATH/run
 fi
